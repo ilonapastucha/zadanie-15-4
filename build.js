@@ -14,11 +14,11 @@ console.log('ZADANIE 2');
 var multiply = function multiply() {
   var x = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 1;
   var y = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 1;
-  return console.log("Wynik mno\u017Cenia: " + x + " x " + y + " = " + x * y);
+  return "Wynik mno\u017Cenia: " + x + " x " + y + " = " + x * y;
 };
-multiply(2, 5); // 10
-multiply(6, 6); // 36
-multiply(5); // 5
+console.log(multiply(2, 5)); // 10
+console.log(multiply(6, 6)); // 36
+console.log(multiply(5)); // 5
 
 
 // Zadanie 3 
@@ -30,13 +30,11 @@ var average = function average() {
     args[_key] = arguments[_key];
   }
 
-  return console.log(args.reduce(function (a, b) {
-    return a + b;
-  }) / args.length);
+  return args.reduce((sum, num) => sum += num, 0)/args.length;
 };
-average(1); // 1
-average(1, 3); // 2
-average(1, 3, 6, 6); // 4
+console.log(average(1)); // 1
+console.log(average(1, 3)); // 2
+console.log(average(1, 3, 6, 6)); // 4
 
 //Zadanie 4 
 
