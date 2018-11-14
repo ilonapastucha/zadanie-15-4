@@ -9,20 +9,20 @@ console.log(`${a}, ${b}`);
 
 console.log('ZADANIE 2');
 
-const multiply = (x = 1, y = 1) => console.log(`Wynik mnożenia: ${x} x ${y} = ${x * y}`);
-multiply(2, 5) // 10
-multiply(6, 6) // 36
-multiply(5) // 5
+const multiply = (x = 1, y = 1) => (`Wynik mnożenia: ${x} x ${y} = ${x * y}`);
+console.log(multiply(2, 5)) // 10
+console.log(multiply(6, 6)) // 36
+console.log(multiply(5)) // 5
 
 
 // Zadanie 3 
 
 console.log('ZADANIE 3');
 
-const average = (...args) => console.log(args.reduce((a, b) => a + b)/args.length);
-average(1) // 1
-average(1, 3) // 2
-average(1, 3, 6, 6) // 4
+const average = (...args) => (args.reduce((a, b) => a + b)/args.length);
+console.log(average(1)) // 1
+console.log(average(1, 3)) // 2
+console.log(average(1, 3, 6, 6)) // 4
 
 //Zadanie 4 
 
